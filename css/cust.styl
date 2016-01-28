@@ -1,0 +1,46 @@
+#services
+  width 100vw
+  height 100vh
+  overflow hidden
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  
+  .services-list
+    list-style: none; 
+    
+    display:flex; 
+    align-items:center; 
+    justify-content: center;
+  
+    li
+      margin 10px
+      padding 10px
+
+  #service-slides
+    width 300%
+    height 100%
+    
+    .service
+      height 100%
+      width 33.3%
+      float left
+      
+      background rgb(103, 0, 0)
+      background-size cover
+      
+      h3, h4, p
+        color white
+
+      &.non-destructive
+        // background url('../images/ndt/pop/Non-Destructive-Testing-Courses_55773_image3.jpg')
+        background-image url("../images/ndt/services/non-destructive/ndt3-dark.jpg")
+        background-position 40% 10%
+        
+      &.heat-treatment
+        background-image url("../images/ndt/services/heat-treatment-dark.jpg");
+        background-position 40% 10%
+        
+      &.sand-blasting
+        background-image url("../images/ndt/services/sandblast-dark.jpg")
+        background-position 40% 10
+        

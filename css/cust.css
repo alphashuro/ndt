@@ -1,0 +1,45 @@
+#services {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+#services .services-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#services .services-list li {
+  margin: 10px;
+  padding: 10px;
+}
+#services #service-slides {
+  width: 300%;
+  height: 100%;
+}
+#services #service-slides .service {
+  height: 100%;
+  width: 33.3%;
+  float: left;
+  background: #670000;
+  background-size: cover;
+}
+#services #service-slides .service h3,
+#services #service-slides .service h4,
+#services #service-slides .service p {
+  color: #fff;
+}
+#services #service-slides .service.non-destructive {
+  background-image: url("../images/ndt/services/non-destructive/ndt3-dark.jpg");
+  background-position: 40% 10%;
+}
+#services #service-slides .service.heat-treatment {
+  background-image: url("../images/ndt/services/heat-treatment-dark.jpg");
+  background-position: 40% 10%;
+}
+#services #service-slides .service.sand-blasting {
+  background-image: url("../images/ndt/services/sandblast-dark.jpg");
+  background-position: 40% 10;
+}
