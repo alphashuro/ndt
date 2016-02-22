@@ -1,38 +1,82 @@
+img#nav-logo
+  transition all .3s
+  width 100px
+  position absolute
+  top 20px
+  left 5vw
+
+  &.bigger
+    width @width*4
+    position absolute
+    top 30vh
+    left 10vw
+
 #main-slider
   .item
     background-position center
     background-size cover
 
+    .slider-inner
+      background-color rgba(30, 30, 30, 0.6)
+      transition all 0.5s
+      opacity 0
+      top 100px
+
+      &.show
+        opacity 1
+        top 0
+
+#serv-bg
+  height 100%
+  width 100%
+  // background-image url('../images/ndt/new/optimized/services/optimized-11.JPG')
+  background-color #a00d0d
+  background-size cover
+  // filter blur(4px)
+  position absolute
+  top 0
+  left 0
+
 #services
+  position relative
   width 100vw
   height 100vh
   overflow hidden
-  -webkit-perspective: 1000;
-  perspective: 1000;
-  
+  -webkit-perspective 1000
+  perspective 1000
+
   .services-list
-    list-style: none; 
-    
-    display:flex; 
-    align-items:center; 
+    list-style: none;
+
+    display:flex;
+    align-items:center;
     justify-content: center;
-  
+
     li
       margin 10px
       padding 10px
 
+  .section-header
+    margin-bottom -0px
+
   #service-slides
     width 300%
     height 100%
-    
+
     .service
       height 100%
       width 33.3%
       float left
-      
+
       background rgb(103, 0, 0)
       background-size cover
-      
+
+      .container
+        background: rgba(0,0,0,0.8);
+        text-shadow: 0 0 0px #eee;
+
+
+
       h3, h4, p
         color white
 
@@ -40,22 +84,99 @@
         // background url('../images/ndt/pop/Non-Destructive-Testing-Courses_55773_image3.jpg')
         background-image url("../images/ndt/new/optimized/services/ndt/optimized-4.JPG")
         background-position 40% 10%
-        
+
       &.heat-treatment
         background-image url("../images/ndt/new/optimized/services/heat/optimized-5.JPG");
         background-position 40% 10%
-        
+
       &.sand-blasting
         background-image url("../images/ndt/new/optimized/services/sand/optimized-7.JPG")
         background-position 40% 10
-        
+
 
 #cta2
   background-image url(../images/ndt/new/optimized/clients/cta2.JPG)
-  
-#animated-number
+  background-image none
+  padding 0
+  position relative
+
+  #cta2-background
+    background-image url(../images/ndt/new/optimized/clients/cta2.JPG)
+    background-size cover
+    filter blur(4px)
+    height 250px
+
+  .container
+    position absolute
+    top 0
+    left 0
+    right 0
+
+#numbers-cont
+  position relative
+  height 500px
+
+#animated-number-bg
   background-image url(../images/ndt/new/optimized/facts/bg.JPG)
-  
+  height 100%
+  filter blur(4px) brightness(50%)
+
+#animated-number
+  background none
+  position absolute
+  top 0
+  left 0
+  right 0
+
 #testimonial
   background-image url(../images/ndt/new/optimized/quotes/optimized-8.JPG)
   background-position center
+
+$red = #A00D0D
+$gray = #BCBCBC
+$white = white
+
+section
+  &#about
+    color $white
+    background $red
+
+  h3, h4
+    color $gray
+
+  a, i
+    color $white !important
+
+  .section-header
+    .section-title
+      color $gray
+
+#aerial-container
+  background-image url('../images/ndt/new/drone/aerial_1.JPG')
+  background-size cover
+
+#contact
+  .container-wrapper
+    background none
+
+    a, h3
+      color #222 !important
+
+    a
+      text-decoration: underline;
+      &:hover
+        text-decoration: none;
+        
+
+#testimonial-bg
+  height 100%
+  width 100%
+  position absolute
+  top 0
+  left 0
+  background-image: url("../images/ndt/new/optimized/quotes/optimized-8.JPG");
+  background-repeat no-repeat
+  background-size 1080px auto
+  background-position: 0 -32vh;
+  filter: blur(3px) brightness(30%);
+// #carousel-testimonial

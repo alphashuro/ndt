@@ -1,8 +1,41 @@
+img#nav-logo {
+  transition: all 0.3s;
+  width: 100px;
+  position: absolute;
+  top: 20px;
+  left: 5vw;
+}
+img#nav-logo.bigger {
+  width: 400px;
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
+}
 #main-slider .item {
   background-position: center;
   background-size: cover;
 }
+#main-slider .item .slider-inner {
+  background-color: rgba(30,30,30,0.6);
+  transition: all 0.5s;
+  opacity: 0;
+  top: 100px;
+}
+#main-slider .item .slider-inner.show {
+  opacity: 1;
+  top: 0;
+}
+#serv-bg {
+  height: 100%;
+  width: 100%;
+  background-color: #a00d0d;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 #services {
+  position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -19,6 +52,9 @@
   margin: 10px;
   padding: 10px;
 }
+#services .section-header {
+  margin-bottom: 0px;
+}
 #services #service-slides {
   width: 300%;
   height: 100%;
@@ -29,6 +65,10 @@
   float: left;
   background: #670000;
   background-size: cover;
+}
+#services #service-slides .service .container {
+  background: rgba(0,0,0,0.8);
+  text-shadow: 0 0 0px #eee;
 }
 #services #service-slides .service h3,
 #services #service-slides .service h4,
@@ -49,11 +89,83 @@
 }
 #cta2 {
   background-image: url("../images/ndt/new/optimized/clients/cta2.JPG");
+  background-image: none;
+  padding: 0;
+  position: relative;
+}
+#cta2 #cta2-background {
+  background-image: url("../images/ndt/new/optimized/clients/cta2.JPG");
+  background-size: cover;
+  filter: blur(4px);
+  height: 250px;
+}
+#cta2 .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#numbers-cont {
+  position: relative;
+  height: 500px;
+}
+#animated-number-bg {
+  background-image: url("../images/ndt/new/optimized/facts/bg.JPG");
+  height: 100%;
+  filter: blur(4px) brightness(50%);
 }
 #animated-number {
-  background-image: url("../images/ndt/new/optimized/facts/bg.JPG");
+  background: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 #testimonial {
   background-image: url("../images/ndt/new/optimized/quotes/optimized-8.JPG");
   background-position: center;
+}
+section#about {
+  color: #fff;
+  background: #a00d0d;
+}
+section h3,
+section h4 {
+  color: #bcbcbc;
+}
+section a,
+section i {
+  color: #fff !important;
+}
+section .section-header .section-title {
+  color: #bcbcbc;
+}
+#aerial-container {
+  background-image: url("../images/ndt/new/drone/aerial_1.JPG");
+  background-size: cover;
+}
+#contact .container-wrapper {
+  background: none;
+}
+#contact .container-wrapper a,
+#contact .container-wrapper h3 {
+  color: #222 !important;
+}
+#contact .container-wrapper a {
+  text-decoration: underline;
+}
+#contact .container-wrapper a:hover {
+  text-decoration: none;
+}
+#testimonial-bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../images/ndt/new/optimized/quotes/optimized-8.JPG");
+  background-repeat: no-repeat;
+  background-size: 1080px auto;
+  background-position: 0 -32vh;
+  filter: blur(3px) brightness(30%);
 }
