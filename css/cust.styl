@@ -1,0 +1,233 @@
+filter(filters)
+  filter filters
+  -webkit-filter filters
+  -moz-filter filters
+
+img#nav-logo
+  transition all .3s
+  width 100px
+  position absolute
+  top 20px
+  left 5vw
+
+  &.bigger
+    width @width*4
+    position absolute
+    top 30vh
+    left 10vw
+
+#main-slider
+  .item
+    background-position center
+    background-size cover
+
+    .slider-inner
+      background-color rgba(30, 30, 30, 0.6)
+      transition all 0.5s
+      opacity 0
+      top 100px
+
+      &.show
+        opacity 1
+        top 0
+
+#serv-bg
+  height 100%
+  width 100%
+  background-color #a00d0d
+  background-size cover
+  position absolute
+  top 0
+  left 0
+
+#services
+  padding-bottom 0
+  .services-list
+    list-style: none;
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+    li
+      margin 10px
+      padding 10px
+
+  .section-header
+    margin-bottom -0px
+
+  #service-slides
+    .service
+      background rgb(103, 0, 0)
+      background-size cover
+      background-position 40% 10%
+
+      .container
+        background: rgba(0,0,0,0.8);
+        text-shadow: 0 0 0px #eee;
+        height 500px
+
+      h3, h4, p
+        color white
+
+      &.non-destructive
+        background-image url("../images/ndt/new/optimized/services/ndt/optimized-4.JPG")
+
+      &.heat-treatment
+        background-image url("../images/ndt/new/optimized/services/heat/optimized-5.JPG");
+
+      &.sand-blasting
+        background-image url("../images/ndt/new/optimized/services/sand/optimized-7.JPG")
+
+#cta2
+  background-image url(../images/ndt/new/optimized/clients/cta2.JPG)
+  background-image none
+  padding 0
+  position relative
+
+  #cta2-background
+    background-image url(../images/ndt/new/optimized/clients/cta2.JPG)
+    background-size cover
+    filter blur(4px)
+    height 250px
+
+  .container
+    position absolute
+    top 0
+    left 0
+    right 0
+
+#numbers-cont
+  position relative
+  height 500px
+
+#animated-number-bg
+  background-image url(../images/ndt/new/optimized/facts/bg.JPG)
+  height 100%
+  filter blur(4px) brightness(50%)
+  -webkit-filter blur(4px) brightness(50%)
+  background-repeat: no-repeat;
+  background-size: cover;
+
+#animated-number
+  background none
+  position absolute
+  top 0
+  left 0
+  right 0
+
+#testimonial
+  background-image url(../images/ndt/new/optimized/quotes/optimized-8.JPG)
+  background-position center
+
+#testimonial-bg
+  height 100%
+  width 100%
+  position absolute
+  top 0
+  left 0
+  background rgba(20, 20, 20, 0.7)
+  background-repeat no-repeat
+  background-size 1080px auto
+  background-position: 0 -32vh;
+
+#carousel-testimonial
+  padding 20px
+
+$red = #A00D0D
+$gray = #BCBCBC
+$white = white
+
+#portfolio
+  background rgba(255,255,255, 0.9)
+
+body {
+  background: url(../images/ndt/radiation.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.red
+  color $white
+  background $red
+  a
+    color $white
+    text-decoration: underline;
+    transition all .2s
+    &:hover
+      font-size 1.3em
+  h1,h2,h3,h4,h5
+    color #efefef !important
+
+section
+  background rgba(255,255,255, 0.9)
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position center center
+
+  &#safety
+    padding 50px
+    font-size: 1.7em;
+    padding-bottom 100px;
+
+    .items
+      line-height: 1.2em;
+
+      .item
+        padding 10px
+
+  h3, h4
+    color $gray
+
+  a, i
+    color $white !important
+
+  .section-header
+    .section-title
+      color #333
+
+#aerial-container
+  background-image url('../images/ndt/new/drone/aerial_1.JPG')
+  background-size cover
+
+#contact
+  .container-wrapper
+    background none
+
+    a, h3
+      color #222 !important
+
+    a
+      text-decoration: underline;
+      &:hover
+        text-decoration: none;
+
+.portfolio-items
+  display flex
+  flex-wrap wrap
+
+ul.industries
+  display: -webkit-flex;
+  display flex
+
+  li
+    padding-top: 1em;
+    margin-right 30px
+
+button.slide-jump
+  background transparent
+  border none
+  -webkit-box-shadow 0 0 5px red
+  box-shadow 0 0 5px red
+  font-size 1.5em
+
+#main-menu.navbar-default
+  transition all .2s
+  &.red
+    background rgba(160, 13, 13, 0.85)
+    color #efefef
+
+    a
+      color #efefef

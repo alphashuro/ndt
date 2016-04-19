@@ -1,0 +1,238 @@
+img#nav-logo {
+  transition: all 0.3s;
+  width: 100px;
+  position: absolute;
+  top: 20px;
+  left: 5vw;
+}
+img#nav-logo.bigger {
+  width: 400px;
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
+}
+#main-slider .item {
+  background-position: center;
+  background-size: cover;
+}
+#main-slider .item .slider-inner {
+  background-color: rgba(30,30,30,0.6);
+  transition: all 0.5s;
+  opacity: 0;
+  top: 100px;
+}
+#main-slider .item .slider-inner.show {
+  opacity: 1;
+  top: 0;
+}
+#serv-bg {
+  height: 100%;
+  width: 100%;
+  background-color: #a00d0d;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#services {
+  padding-bottom: 0;
+}
+#services .services-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#services .services-list li {
+  margin: 10px;
+  padding: 10px;
+}
+#services .section-header {
+  margin-bottom: 0px;
+}
+#services #service-slides .service {
+  background: #670000;
+  background-size: cover;
+  background-position: 40% 10%;
+}
+#services #service-slides .service .container {
+  background: rgba(0,0,0,0.8);
+  text-shadow: 0 0 0px #eee;
+  height: 500px;
+}
+#services #service-slides .service h3,
+#services #service-slides .service h4,
+#services #service-slides .service p {
+  color: #fff;
+}
+#services #service-slides .service.non-destructive {
+  background-image: url("../images/ndt/new/optimized/services/ndt/optimized-4.JPG");
+}
+#services #service-slides .service.heat-treatment {
+  background-image: url("../images/ndt/new/optimized/services/heat/optimized-5.JPG");
+}
+#services #service-slides .service.sand-blasting {
+  background-image: url("../images/ndt/new/optimized/services/sand/optimized-7.JPG");
+}
+#cta2 {
+  background-image: url("../images/ndt/new/optimized/clients/cta2.JPG");
+  background-image: none;
+  padding: 0;
+  position: relative;
+}
+#cta2 #cta2-background {
+  background-image: url("../images/ndt/new/optimized/clients/cta2.JPG");
+  background-size: cover;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  height: 250px;
+}
+#cta2 .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#numbers-cont {
+  position: relative;
+  height: 500px;
+}
+#animated-number-bg {
+  background-image: url("../images/ndt/new/optimized/facts/bg.JPG");
+  height: 100%;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -webkit-filter: blur(4px) brightness(50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#animated-number {
+  background: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#testimonial {
+  background-image: url("../images/ndt/new/optimized/quotes/optimized-8.JPG");
+  background-position: center;
+}
+#testimonial-bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(20,20,20,0.7);
+  background-repeat: no-repeat;
+  background-size: 1080px auto;
+  background-position: 0 -32vh;
+}
+#carousel-testimonial {
+  padding: 20px;
+}
+#portfolio {
+  background: rgba(255,255,255,0.9);
+}
+body {
+  background: url("../images/ndt/radiation.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.red {
+  color: #fff;
+  background: #a00d0d;
+}
+.red a {
+  color: #fff;
+  text-decoration: underline;
+  transition: all 0.2s;
+}
+.red a:hover {
+  font-size: 1.3em;
+}
+.red h1,
+.red h2,
+.red h3,
+.red h4,
+.red h5 {
+  color: #efefef !important;
+}
+section {
+  background: rgba(255,255,255,0.9);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+section#safety {
+  padding: 50px;
+  font-size: 1.7em;
+  padding-bottom: 100px;
+}
+section#safety .items {
+  line-height: 1.2em;
+}
+section#safety .items .item {
+  padding: 10px;
+}
+section h3,
+section h4 {
+  color: #bcbcbc;
+}
+section a,
+section i {
+  color: #fff !important;
+}
+section .section-header .section-title {
+  color: #333;
+}
+#aerial-container {
+  background-image: url("../images/ndt/new/drone/aerial_1.JPG");
+  background-size: cover;
+}
+#contact .container-wrapper {
+  background: none;
+}
+#contact .container-wrapper a,
+#contact .container-wrapper h3 {
+  color: #222 !important;
+}
+#contact .container-wrapper a {
+  text-decoration: underline;
+}
+#contact .container-wrapper a:hover {
+  text-decoration: none;
+}
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul.industries {
+  display: -webkit-flex;
+  display: flex;
+}
+ul.industries li {
+  padding-top: 1em;
+  margin-right: 30px;
+}
+button.slide-jump {
+  background: transparent;
+  border: none;
+  -webkit-box-shadow: 0 0 5px #f00;
+  box-shadow: 0 0 5px #f00;
+  font-size: 1.5em;
+}
+#main-menu.navbar-default {
+  transition: all 0.2s;
+}
+#main-menu.navbar-default.red {
+  background: rgba(160,13,13,0.85);
+  color: #efefef;
+}
+#main-menu.navbar-default.red a {
+  color: #efefef;
+}
