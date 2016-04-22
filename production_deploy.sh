@@ -1,1 +1,1 @@
-rsync -avz -e 'ssh' . ndtprzcbdy@vaalmail.co.za:~/public_html/
+rsync -avz -e 'ssh' --exclude='.git/' . ndtprzcbdy@vaalmail.co.za:~/public_html/
